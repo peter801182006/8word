@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Object test ver.3</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body class="a">
+
+<div class="commend">
+<p>請輸入西元年分:<input id="yid" type="number" min="0" max="3000" required></p>
+
+
+<p>月分:<input id="mid" type="number" min="1" max="12" required></p>
+
+
+<p>日期:<input id="did" type="number" min="1" max="31" required></p>
+
+
+
+<p>性別:
+<select id= "sexid">
+  <option value="0">男</option>
+  <option value="1">女</option>
+</select>
+<button onclick="myFunction()">OK</button>
+</p>
+<!-- <div style="height:30px;"></div> -->
+</div>
+  <div style="background-color:yellow;color:black;padding:20px;">
+<h2>別人眼中的你:</h2>
+<p id="demo"></p>
+<p id="demo2"></p>
+<h2>潛藏在內心的動物習性:</h2>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<h2>潛在性格:</h2>     
+<h2>是否氣運加身</h2>
+<p id="wos"></p>
+  
+<h2>顏色帶給你助益:</h2>
+<p id="color"></p>
+
+</div> 
+
+  
+<div style="background-color:blue;color:black;padding:20px;" >
+  <h2>人生狀態:</h2>
+  <p>幼年</p>
+  <p id="word1"></p>
+  <p>青年</p>
+  <p id="word2"></p>
+  <p>家庭</p>
+  <p id="word3"></p>
+
+
+  </div>
+<div style="background-color:green;color:black;padding:20px;" >
+<h2>今日運勢</h2>
+<p id="tengoddemo"></p>
+<p id="fudemo"></p>
+<p>建議穿搭色</p>
+  <p id="clothcolor"></p>
+</div>
+</body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
