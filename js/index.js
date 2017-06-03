@@ -1175,7 +1175,6 @@ NineStar.prototype. nine=function(data){
     }
        result+="</div>";
   }
-  alert(color.toString());
   return result;
 }
 
