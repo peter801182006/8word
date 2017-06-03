@@ -899,7 +899,6 @@ function testFunction(){
   var tootherheartcompare=[life.dzDisjoint(dz[2],odz[1]),life.dzFit(dz[2],odz[1]),life.dzImpulse(dz[2],odz[1])];
   var othertoheartcompare=[life.dzDisjoint(dz[1],odz[2]),life.dzFit(dz[1],odz[2]),life.dzImpulse(dz[1],odz[2])];
   var compare=[heartcompare,tootherheartcompare,othertoheartcompare];
-  alert(compare.toString());
   for(var j=0;j<3;j++){
     for(var i=0;i<compare[j].length;i++){
       if(compare[j][i]!=-1){
@@ -1105,7 +1104,6 @@ NineStar.prototype.getLifeIndex=function (year,sex){
     result=(index-2>0)?index-2:index-2+9;
   }
   if(result==5)result=(sex==0)?2:8;
-  alert(result);
   return result;
 }
 
@@ -1189,7 +1187,6 @@ NineStar.prototype.getResult=function(){
   
   var lifearray=this.lifeArray(lifeindex);
   var uu=this.compare(lifearray);
-  alert(uu);
   var cc=this.getPosition(uu);
   var result="";
   var result2="";
