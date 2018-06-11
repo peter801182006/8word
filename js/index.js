@@ -953,8 +953,8 @@ function myFunction(){
 
     document.getElementById("demo").innerHTML =life.getTgName(persontg[2]);
     document.getElementById("demo2").innerHTML =life.getTgExplanation();
-    document.getElementById("demo3").innerHTML =life.getDzName(persondz[1]);
-    document.getElementById("demo4").innerHTML =life.getDzExplanation();
+    document.getElementById("demo3").innerHTML ="天干: "+ life.getTgName(persontg[3])+" " +life.getTgName(persontg[2])+" "+life.getTgName(persontg[1])+" "+ life.getTgName(persontg[0]);
+    document.getElementById("demo4").innerHTML ="地支: "+ life.getDzName(persondz[3])+" " +life.getDzName(persondz[2])+" "+life.getDzName(persondz[1])+" "+ life.getDzName(persondz[0]);
     document.getElementById("wos").innerHTML =life.getWeakOrStrongExplanation();
     document.getElementById("color").innerHTML =life.getLuckColor(sex);
     document.getElementById("word1").innerHTML =life.getTenGodExplanation(1,lifetengod[0]);
