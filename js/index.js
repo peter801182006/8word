@@ -1,11 +1,11 @@
 ﻿//4/11 15:30~16:30
 //4/12 14:30
-function PersonBirthday(year,month,day){
+function PersonBirthday(year,month,day,hr){
   //年月日時
   this.year=year;
   this.month=month;
   this.day=day;
-  
+  this.hr=hr;
   this.toString=function(){
     var year=this.year;
     var month=this.month;
@@ -21,12 +21,14 @@ function TheDate(year,month,day){
   this.year=year;
   this.month=month;
   this.day=day;
+  this.hr=hr;
 }
 //儒略日計算
 TheDate.prototype.getJdays=function(){
     var yr=this.year;
     var mh=this.month;
     var dy=this.day;
+    var dh=this.hr;
     var yp = yr + Math.floor((mh - 3) / 10);
   if (((yr > 1582) || (yr == 1582 && mh > 10) || (yr == 1582 && mh == 10 && dy >= 15))) {
     var init = 1721119.5;
