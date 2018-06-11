@@ -334,7 +334,8 @@ function LifeEightWord(tg,dz){
     //
     this.lifebankHorseFlower;
     //
-    this.ctg = new Array("甲木", "乙木", "丙火", "丁火", "戊土", "己土", "庚金", "辛金", "壬水", "癸水");
+    this.ctg = new Array("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸");
+    this.ctg2 = new Array("甲木", "乙木", "丙火", "丁火", "戊土", "己土", "庚金", "辛金", "壬水", "癸水");
     this.cdz = new Array("子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥");
     this.cdzam=new Array("老鼠","牛","老虎","兔","龍","蛇","馬","羊","猴","雞","狗","豬");
     //十神陣列
@@ -356,6 +357,9 @@ LifeEightWord.prototype.getDz=function(){
 }
 LifeEightWord.prototype.getTgName=function(i){
   return this.ctg[i];
+}
+LifeEightWord.prototype.getTgName2=function(i){
+  return this.ctg2[i];
 }
 LifeEightWord.prototype.getDzName=function(i){
   return this.cdz[i];
@@ -962,7 +966,7 @@ function myFunction(){
    
 
 
-    document.getElementById("demo").innerHTML =life.getTgName(persontg[2]);
+    document.getElementById("demo").innerHTML =life.getTgName2(persontg[2]);
     document.getElementById("demo2").innerHTML =life.getTgExplanation();
     document.getElementById("demo0").innerHTML ="      "+"時"+" "+"日"+" "+"月"+" "+"年";
     document.getElementById("demo3").innerHTML ="天干: "+ life.getTgName(persontg[3])+" " +life.getTgName(persontg[2])+" "+life.getTgName(persontg[1])+" "+ life.getTgName(persontg[0]);
