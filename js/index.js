@@ -1,11 +1,12 @@
 ﻿//4/11 15:30~16:30
 //4/12 14:30
-function PersonBirthday(year,month,day,hr){
+function PersonBirthday(year,month,day,hr,min){
   //年月日時
   this.year=year;
   this.month=month;
   this.day=day;
   this.hr=hr;
+  this.min=min;
   this.toString=function(){
     var year=this.year;
     var month=this.month;
@@ -17,11 +18,13 @@ function PersonBirthday(year,month,day,hr){
   }
 }
 //日期處理
-function TheDate(year,month,day){
+function TheDate(year,month,day,hr,min){
   this.year=year;
   this.month=month;
   this.day=day;
   this.hr=hr;
+  this.min=min;
+  
 }
 //儒略日計算
 TheDate.prototype.getJdays=function(){
@@ -862,7 +865,9 @@ LifeEightWord.prototype.getDailyTenGodExplanation=function(tengod){
 }
 var year =document.getElementById("yid");
 var month = document.getElementById("mid");
-var day = document.getElementById("did"); 
+var day = document.getElementById("did");
+var hr = document.getElementById("hid");
+var day = document.getElementById("miid");
 var life
 function DailyLuck(){
   var Today = new Date();
@@ -939,8 +944,11 @@ function myFunction(){
     var yy= Number(year.value);
     var mm=Number(month.value);
     var dd=Number(day.value);
+    var hrhr=Number(hr.value);
+    var mimi=Number(min.value);
+    
     var sex=document.getElementById("sexid").value;
-    var test=new PersonBirthday(yy,mm,dd).goToString();
+    var test=new PersonBirthday(yy,mm,dd,hrhr,mimi).goToString();
     var jd=new TheDate(yy,mm,dd).getJdays();
     var jdve=new TheDate(yy,mm,dd).getVE(yy);
     var tgdzdate=new TgDzDate(yy,mm,dd,jd,jdve);
