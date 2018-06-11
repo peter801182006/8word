@@ -299,6 +299,17 @@ TgDzDate.prototype.getGZ=function(spcjd, ya,  tg, dz) {
   var ddz = dgz % 12;
   tg[2]= dtg;
   dz[2] =ddz;
+  
+  var hgz;
+    //計算時柱之干支
+  dh = dayjd * 12;
+  hgz = (Math.floor(dh + 48) % 60 + 60) % 60;
+  var htg = hgz % 10; //時干
+  var hdz = hgz % 12; //時支
+  tg[3]=htg;
+  dz[3] =hdz;
+  
+  
 }
 
 //八字
