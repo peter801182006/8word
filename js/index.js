@@ -32,6 +32,7 @@ TheDate.prototype.getJdays=function(){
     var mh=this.month;
     var dy=this.day;
     var dh=this.hr;
+    var dmi=this.min;
     var yp = yr + Math.floor((mh - 3) / 10);
   if (((yr > 1582) || (yr == 1582 && mh > 10) || (yr == 1582 && mh == 10 && dy >= 15))) {
     var init = 1721119.5;
@@ -47,7 +48,7 @@ TheDate.prototype.getJdays=function(){
   var mp = Math.floor(mh + 9) % 12;
   var jdm = mp * 30 + Math.floor((mp + 1) * 34 / 57);
   var jdd = dy - 1;
-  var jdh = 0.5 / 24;
+  var jdh = dh / 24+dmi/(24*60);
 
   var jd = jdy + jdm + jdd + jdh + init;
   return jd;
