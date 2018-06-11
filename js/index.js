@@ -73,8 +73,8 @@ TheDate.prototype.getVE=function(year){
   return jdve
 }
 
-function TgDzDate(year,month,day,jday,jdve){
-   TheDate.call(this, year,month,day);
+function TgDzDate(year,month,day,hr,min,jday,jdve){
+   TheDate.call(this, year,month,day,hr,min);
    var jd=this.jday;
    var jdve=this.jdve;
    var jdez=new Array;
@@ -952,7 +952,7 @@ function myFunction(){
     var test=new PersonBirthday(yy,mm,dd,hrhr,mimi).goToString();
     var jd=new TheDate(yy,mm,dd).getJdays();
     var jdve=new TheDate(yy,mm,dd).getVE(yy);
-    var tgdzdate=new TgDzDate(yy,mm,dd,jd,jdve);
+    var tgdzdate=new TgDzDate(yy,mm,dd,hrhr,mimi,jd,jdve);
     //
     
     
