@@ -49,7 +49,7 @@ TheDate.prototype.getJdays=function(){
   var jdm = mp * 30 + Math.floor((mp + 1) * 34 / 57);
   var jdd = dy - 1;
   var jdh = dh / 24+dmi/(24*60);
-
+  console.log(jdh);
   var jd = jdy + jdm + jdd + jdh + init;
   return jd;
 }
