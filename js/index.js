@@ -867,7 +867,7 @@ var year =document.getElementById("yid");
 var month = document.getElementById("mid");
 var day = document.getElementById("did");
 var hr = document.getElementById("hid");
-var day = document.getElementById("miid");
+var min = document.getElementById("miid");
 var life
 function DailyLuck(){
   var Today = new Date();
