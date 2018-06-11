@@ -953,6 +953,7 @@ function myFunction(){
 
     document.getElementById("demo").innerHTML =life.getTgName(persontg[2]);
     document.getElementById("demo2").innerHTML =life.getTgExplanation();
+    document.getElementById("demo0").innerHTML ="      "+"時"+" "+"日"+" "+"月"+" "+"年";
     document.getElementById("demo3").innerHTML ="天干: "+ life.getTgName(persontg[3])+" " +life.getTgName(persontg[2])+" "+life.getTgName(persontg[1])+" "+ life.getTgName(persontg[0]);
     document.getElementById("demo4").innerHTML ="地支: "+ life.getDzName(persondz[3])+" " +life.getDzName(persondz[2])+" "+life.getDzName(persondz[1])+" "+ life.getDzName(persondz[0]);
     document.getElementById("wos").innerHTML =life.getWeakOrStrongExplanation();
@@ -960,7 +961,7 @@ function myFunction(){
     document.getElementById("word1").innerHTML =life.getTenGodExplanation(1,lifetengod[0]);
     document.getElementById("word2").innerHTML =life.getTenGodExplanation(2,lifetengod[1]);
     document.getElementById("word3").innerHTML =life.getTenGodExplanation(3,lifeinnertengod[2]);
-    DailyLuck();
+    //DailyLuck();
     // document.getElementById("word3").innerHTML =life.getLifeInnerTenGodIndex().toString();
   }else{
        alert("時間點不正確，請重新輸入");
